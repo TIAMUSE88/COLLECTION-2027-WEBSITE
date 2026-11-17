@@ -1,0 +1,55 @@
+header {
+  background-color: #efedda;
+  opacity: 63%;
+  width: 1440px;
+  height: 600px;
+}
+
+header h1 {
+  font-family: "Bitcount Grid Single", sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 200px;
+}
+
+header,
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.issue-number {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 70px;
+}
+.manifesto {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.first-issue {
+  background-image: url("/images/background-print.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1440px;
+  height: 600px;
+}
+
+.quote {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #efedda;
+  opacity: 80%;
+  font-style: italic;
+  width: 617px;
+  height: 246.4px;
+  letter-spacing: 0.1em;
+  align-items: left;
+}
