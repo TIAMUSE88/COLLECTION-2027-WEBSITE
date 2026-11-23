@@ -1,11 +1,17 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbf6;
+}
+
 header {
   background-color: #efedda;
   opacity: 63%;
-  width: 1440px;
   height: 600px;
 }
 
-header h1 {
+header h1,
+.section-career {
   font-family: "Bitcount Grid Single", sans-serif;
   font-size: 80px;
   text-transform: uppercase;
@@ -19,16 +25,20 @@ p {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-.issue-number {
+.issue-number,
+.metadata-bottom {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
   margin-top: 70px;
+  padding-bottom: 20px;
 }
-.manifesto {
+.manifesto,
+.metadata-top {
   display: flex;
   justify-content: flex-start;
   margin-left: 20px;
+  padding-top: 20px;
 }
 
 .first-issue {
@@ -36,11 +46,10 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
   height: 600px;
 }
 
-.quote {
+.first-section-quote {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   text-align: center;
@@ -48,8 +57,101 @@ p {
   color: #efedda;
   opacity: 80%;
   font-style: italic;
-  width: 617px;
+  width: 900px;
   height: 246.4px;
   letter-spacing: 0.1em;
   align-items: left;
+  padding: 100px;
+  margin: 0 auto;
+  padding-top: 15rem;
+}
+
+.description {
+  padding-top: 10em;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.brand {
+  font-family: "Bitcount Grid Single", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 40px;
+  padding: 0 30px 0 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item-description {
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 15px;
+  width: 400px;
+  height: 75px;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+.bubble-quote {
+  display: block;
+  width: 45em;
+  height: auto;
+  margin: 40px auto 80px;
+}
+
+.metadata-bottom,
+.metadata-top {
+  color: #2a3629;
+}
+.second-section {
+  background-color: #f8d8eb;
+  opacity: 90%;
+}
+.grid-item-career {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: #f7f6f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 5em;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
+.career-img {
+  width: 7em;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  align-items: center;
+}
+@media (max-width: 740px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
 }
