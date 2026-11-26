@@ -80,6 +80,7 @@ p {
   width: calc(100% - 40px);
   min-height: 246.4px;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   padding: 15rem 30px 60px;
   margin: 0 auto;
 }
@@ -93,6 +94,8 @@ p {
   max-width: 900px;
   margin-inline: auto;
   padding-inline: 20px;
+  letter-spacing: 7%;
+  line-height: 22px;
 }
 
 .brand {
@@ -124,10 +127,12 @@ p {
   padding: 1.5em;
   margin: 20px;
   border-radius: 30px;
+  border: 2px solid #a0c5b4;
 }
 .grid-item-description {
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
+  letter-spacing: 7%;
   margin-top: 15px;
   justify-content: center;
   min-height: 75px;
@@ -202,7 +207,6 @@ p {
 .brand-logo {
   padding-top: 5em;
   display: block;
-  max-width: 40em;
   margin: auto;
 }
 .logo {
@@ -225,39 +229,100 @@ p {
 }
 
 .testimony {
-  display: block;
-  margin: 0 2em 0 2em;
-  letter-spacing: 7%;
-  margin-top: 10em;
-}
-
-.closing-letter {
+  max-width: 900px;
+  margin: 5em auto 0;
+  line-height: 1.7;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 7%;
+}
+.future-brand {
+  width: calc(100% - 40px);
+  max-width: 900px;
+  margin-inline: auto;
 }
 
+.bow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .white-bow {
-  display: block;
   margin: auto;
-  padding: 10em;
+  max-width: 15em;
+  margin: 5em;
 }
 .white-bow:hover {
   transform: scale(1);
 }
 
+.closing-letter-wrap {
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 531px;
+  margin-inline: auto;
+}
+.kiss {
+  width: clamp(4rem, 12vw, 7rem);
+  position: absolute;
+  right: 1rem;
+  bottom: 1.5rem;
+  z-index: 1;
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+.closing-letter {
+  letter-spacing: 7%;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  width: 100%;
+  line-height: 22px;
+}
+
+.closing {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.foot {
+  justify-content: center;
+  align-items: center;
+}
 footer {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
   width: 100%;
+  height: 300px;
   max-width: 100%;
-  padding: 30px 20px;
-  background-color: #2a3629;
+  padding: 60px 40px;
+  background-image: url("/images/Footer\ Backgorund.png");
+  background-position: center bottom;
+  background-size: auto 100%;
   color: #f7f6f2;
+  background-repeat: repeat;
 }
 
 footer p {
   margin: 0;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
+  letter-spacing: 7%;
+}
+.copyright {
+  text-transform: uppercase;
+}
+.tracey {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  margin-left: 50px;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -330,7 +395,7 @@ footer p {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 440px) {
   header h1,
   .section-career {
     font-size: 2.35rem;
@@ -346,5 +411,12 @@ footer p {
 
   .first-section-quote {
     font-size: 1rem;
+  }
+
+  .brand-logo {
+    width: 50px;
+  }
+  .kissy {
+    max-width: 7em;
   }
 }
